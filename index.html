@@ -69,13 +69,13 @@
 							color: #b12d2b;
 						}
 					</style>
-					<paper-tabs selected="js" class="js-app-tabs">
-						<paper-tab name="js">JavaScript</paper-tab>
-						<paper-tab name="ctojs">Compile-to-JS</paper-tab>
-						<paper-tab name="labs">Labs</paper-tab>
+					<paper-tabs selected="{{selected-tab}}" class="js-app-tabs">
+						<paper-tab>JavaScript</paper-tab>
+						<paper-tab>Compile-to-JS</paper-tab>
+						<paper-tab>Labs</paper-tab>
 					</paper-tabs>
 
-					<div class="app-lists">
+					<iron-pages selected="{{selected-tab}}" class="app-lists">
 						<div class="js-app-list" data-app-list="js">
 							<p class="applist-intro">
 								These are examples written in pure JavaScript.
@@ -290,7 +290,7 @@
 							</ul>
 						</div>
 
-					</div>
+					</iron-pages>
 					<ul class="legend">
 						<li><span class="label">R</span> = App also demonstrates routing</li>
 					</ul>
